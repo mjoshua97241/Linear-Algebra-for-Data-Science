@@ -2457,54 +2457,9 @@
    ]
   },
   {
-   "cell_type": "markdown",
-   "id": "c238801a-f352-4404-8a00-879ee3fe7891",
-   "metadata": {},
-   "source": [
-    "# Matrix Math:\n",
-    "\n",
-    "2 categories:\n",
-    "1. intuitive - element-wise procedures\n",
-    "2. unintuitive - \n",
-    "\n",
-    "## Addition and Subtraction\n",
-    "\n",
-    "## \"Shifting\" a Matrix\n",
-    "As with vectors, it is not formally possible to add a scalar to a matrix. Python allows such an operation (e.g., 3+np.eye(2)), which involves broadcastadding the scalar to each element of the matrix. That is a convenient computation, but it is not formally a linear algebra operation.\n",
-    "\n",
-    "Shifting - Linear-Algebra way to add a scaler to a square matrix"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 86,
-   "id": "505e683d-eafe-4bf3-be0b-3bbf72376e6f",
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "array([[10.,  5.,  1.],\n",
-       "       [ 0.,  7., 11.],\n",
-       "       [ 4.,  9., 13.]])"
-      ]
-     },
-     "execution_count": 86,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "A = np.array([[4,5,1], [0,1,11], [4,9,7]])\n",
-    "s = 6\n",
-    "A + s # NOT shifting!\n",
-    "A + s*np.eye(len(A)) # shifting"
-   ]
-  },
-  {
    "cell_type": "code",
    "execution_count": null,
-   "id": "e0b36275-3994-454c-b68d-9dd8ca2761ac",
+   "id": "f4a6470f-1410-4b14-9176-47fbfd72a3bd",
    "metadata": {},
    "outputs": [],
    "source": []
